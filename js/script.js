@@ -2,9 +2,11 @@ let hamburger = document.createElement('i');
 hamburger.classList.add('fa', 'fa-bars');
 console.log(hamburger);
 
-let closebar = document.createElement('img');
-closebar.src = '../images/icon-close.svg';
+let closebar = document.createElement('i');
+closebar.classList.add('fa','fa-plus');
 console.log(closebar);
+
+
 
 let navcard = document.querySelector('.navcard');
 console.log(navcard);
@@ -18,6 +20,7 @@ hamburger.addEventListener('click', () => {
     navcard.classList.add('show');
     hamburger.remove();
     menu.appendChild(closebar);
+    closebar.classList.add('rotate');
 });
 
 closebar.addEventListener('click', () =>{

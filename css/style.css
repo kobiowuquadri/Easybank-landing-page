@@ -136,6 +136,10 @@ header {
   display: flex;
 }
 
+.rotate{
+  transform: rotate(45deg);
+}
+
 /* Next generation Section */
 
 .next_generation {
