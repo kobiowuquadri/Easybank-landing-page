@@ -1,5 +1,5 @@
-let hamburger = document.createElement('img');
-hamburger.src = '../images/icon-hamburger.svg';
+let hamburger = document.createElement('i');
+hamburger.classList.add('fa', 'fa-bars');
 console.log(hamburger);
 
 let closebar = document.createElement('img');
