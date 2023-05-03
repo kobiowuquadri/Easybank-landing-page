@@ -12,6 +12,19 @@ START!!!!!!!!!!!!
   text-decoration: none;
 }
 
+/* Variables */
+:root {
+  --Dark_Blue: hsl(233, 26%, 24%);
+  --Lime_Green: hsl(136, 65%, 51%);
+  --Bright_Cyan: hsl(192, 70%, 51%);
+  --Grayish_Blue: hsl(233, 8%, 62%);
+  --Light_Grayish_Blue: hsl(220, 16%, 96%);
+  --Very_Light_Gray: hsl(0, 0%, 98%);
+  --White: hsl(0, 0%, 100%);
+  --font_size_body: 18px;
+  --blend_bg:linear-gradient(to right, var(--Lime_Green), var(--Bright_Cyan));
+}
+
 body {
   -webkit-user-select: none;
   /* Safari */
@@ -26,18 +39,6 @@ body {
   overflow-x: hidden;
 }
 
-/* Variables */
-:root {
-  --Dark_Blue: hsl(233, 26%, 24%);
-  --Lime_Green: hsl(136, 65%, 51%);
-  --Bright_Cyan: hsl(192, 70%, 51%);
-  --Grayish_Blue: hsl(233, 8%, 62%);
-  --Light_Grayish_Blue: hsl(220, 16%, 96%);
-  --Very_Light_Gray: hsl(0, 0%, 98%);
-  --White: hsl(0, 0%, 100%);
-  --font_size_body: 18px;
-  --blend_bg:linear-gradient(to right, var(--Lime_Green), var(--Bright_Cyan));
-}
 
 h1 {
   font-size: 3rem;
@@ -140,7 +141,7 @@ header {
 .next_generation {
   display: flex;
   width: 100%;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
 .next_generation_content {
@@ -173,7 +174,7 @@ header {
 .next_generation_image {
   background: url(../images/bg-intro-desktop.svg) no-repeat center;
   background-size: cover;
-  height: 700px;
+  height: 100vh;
   width: 100%;
   position: relative;
   right: -120px;
@@ -190,6 +191,7 @@ header {
 /* Why choose Easybank Section */
 
 .why_choose_easybank {
+  margin-top: 100px;
   background-color: var(--Light_Grayish_Blue);
   height: 100%;
 }
